@@ -83,7 +83,7 @@ smoothness = (7/2)*log(p)
 
 #Get the quaternion algebra going first.
 if p%4 != 3:
-    print("Nope, dude! It's gotta be 3 mod 4!")
+    print("Prime has to be 3 mod 4!")
     exit()
 B.<i,j,k> = QuaternionAlgebra(QQ,-1,-p);
 OBasis = [1,i,(i+j)/2,(1+k)/2]
